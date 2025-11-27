@@ -15,13 +15,13 @@ The goal of this lab is to **learn by building, breaking, and securing real-worl
 
 ---
 
-## **🌐 Network Diagram
+## **🌐 Network Diagram**
 
 ![Network Diagram](diagrams/network-diagram.png)
 
 ---
 
-## **🖼️ Homelab Setup
+## **🖼️ Homelab Setup**
 
 ![Homelab Picture](diagrams/homelab-picture.png)
 
