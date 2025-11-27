@@ -21,6 +21,12 @@ The goal of this lab is to **learn by building, breaking, and securing real-worl
 
 ---
 
+## **🖼️ Homelab Setup
+
+![Homelab Picture](diagrams/homelab-picture.png)
+
+---
+
 ## **🖥️ Virtualized Services (via Proxmox)**
 - **Pi-hole** – Network-wide ad blocking & DNS filtering  
 - **Home Assistant** – Smart home & automation  
