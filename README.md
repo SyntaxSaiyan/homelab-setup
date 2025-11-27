@@ -32,13 +32,6 @@ Each layer provides isolation and makes things easier to manage:
     Want to snapshot the entire Wazuh environment? Just snapshot the VM.
     If something breaks, you’re not messing with your Proxmox host.
 
-
----
-
-## **📐 Network Diagram**
-*(Add a diagram here — e.g., an image link like `![Network Diagram](assets/network-diagram.png)`)*  
-> _Diagram built using [draw.io](https://draw.io) or [Excalidraw](https://excalidraw.com/)._
-
 ---
 
 ## **🛠️ Why This Setup?**
@@ -66,8 +59,8 @@ Each layer provides isolation and makes things easier to manage:
 ---
 
 ## **💡 Lessons Learned**
-I use this repo as a log of experiments, challenges, and solutions I’ve found while maintaining the lab.  
-**Check out the [Wiki](./wiki) (coming soon)** for detailed step-by-step guides.
+I use this repo as a log of experiments, challenges, and solutions I’ve found while maintaining the lab. It's essentially a playground that I get to use to learn and experiment with new technologies.
+
 
 ---
 
