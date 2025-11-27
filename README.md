@@ -23,7 +23,7 @@ The goal of this lab is to **learn by building, breaking, and securing real-worl
 
 ## **🖼️ Homelab Setup**
 
-![Homelab Picture](diagrams/homelab-picture.png)
+![Homelab Picture](diagrams/homelab-picture.jpg)
 
 ---
 
