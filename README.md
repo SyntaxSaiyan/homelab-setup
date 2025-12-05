@@ -30,6 +30,7 @@ The goal of this lab is to **learn by building, breaking, and securing real-worl
 ## **🖥️ Virtualized Services (via Proxmox)**
 - **Pi-hole** – Network-wide ad blocking & DNS filtering  
 - **Home Assistant** – Smart home & automation  
+- **hectordiaz.net (self-hosted using a cloudflare tunnel)** - Self-hosted Python/Flask dashboard secured via **Cloudflare Tunnels** (Zero Trust / No open ports)
 - **Tor Relay** – Contributing to online privacy/anonymity
 - **Wazuh(in a container)** – Security Information and Event Management (SIEM) 
 Proxmox (bare metal) → VM (Ubuntu) → Docker containers (Wazuh stack).
