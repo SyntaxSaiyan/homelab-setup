@@ -68,6 +68,36 @@ Each layer provides isolation and makes things easier to manage:
 ## **💡 Lessons Learned**
 I use this repo as a log of experiments, challenges, and solutions I’ve found while maintaining the lab. It's essentially a playground that I get to use to learn and experiment with new technologies.
 
+### Google Maps API Integration with UniFi Controller
+
+When integrating Google Maps API with UniFi Controller for map visualization in the dashboard, several key lessons were learned:
+
+**The Challenge:** After enabling the Google Maps API key and adding it to the UniFi controller, the map view wasn't appearing in the dashboard.
+
+**The Solution Process:**
+
+1. **UI Navigation:** In modern UniFi Network Application (8.x+), the classic "Map" feature has been replaced by InnerSpace or Design Center. The map view is found in:
+   - Navigate to Topology or Floorplans section
+   - Look for dropdown/icon to switch from "Topology" to "Satellite" or "Map"
+   - Note: Some features are restricted in "New UI" vs "Legacy UI"
+
+2. **API Library Requirements:** A single API key isn't enough - these specific Google Cloud APIs must be enabled:
+   - Maps JavaScript API (renders the actual map)
+   - Geocoding API (translates addresses to coordinates)
+   - Places API (location searching)
+   - Geolocation API
+
+3. **Billing & Restrictions:** 
+   - Active billing account required (even with $200/month free tier)
+   - If API key is restricted, add UniFi Controller IP/Domain to "Allowed Referrers"
+
+**The Breakthrough:** Using browser developer tools revealed the specific error and URL that needed authorization: `https://10.10.0.10:8443/api/s/default/cmd/lte`
+
+Adding this URL to the Google Cloud Console's allowed referrers list resolved the issue immediately.
+
+![Google Maps API Fix](diagrams/unifi-google-maps-fix.png)
+
+**Key Takeaway:** Always check browser developer tools for specific API errors - they often provide the exact URLs needed for authorization.
 
 ---
 
